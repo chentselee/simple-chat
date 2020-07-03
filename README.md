@@ -1,4 +1,4 @@
-# simple-chat
+# Simple Chat
 Client part of the simple chat app.
 
 📚 Library/Framework used:
