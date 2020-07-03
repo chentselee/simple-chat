@@ -35,7 +35,7 @@ export default Vue.extend({
     return {
       messageInput: "",
       messages: [],
-      socket: io("localhost:8000"),
+      socket: io(process.env.VUE_APP_SOCKET_IO || "localhost:8000"),
     };
   },
   methods: {
