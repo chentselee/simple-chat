@@ -5,6 +5,7 @@ Client part of the simple chat app.
 - Vue(TypeSript)
 - Vue-router
 - Vuex
+- socket.io
 
 📦 Setup tool:
 - vue-cli
