@@ -15,6 +15,7 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
 import io from "socket.io-client";
 
 interface Message {
@@ -28,7 +29,7 @@ interface Data {
   socket: SocketIOClient.Socket;
 }
 
-export default {
+export default Vue.extend({
   name: "ChatRoom",
   data(): Data {
     return {
@@ -90,7 +91,7 @@ export default {
   beforeDestroy() {
     this.socket.emit("user-left", this.$store.state.username);
   },
-};
+});
 </script>
 
 <style scoped>
